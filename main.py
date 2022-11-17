@@ -13,8 +13,10 @@ if __name__ == '__main__':
 
         catargstxt = ' --text tzx\\' + wav + '.tzx > txt\\' + wav + '.txt'
         catargsbas = ' --basic tzx\\' + wav + '.tzx > bas\\' + wav + '.bas'
+        catargspng = ' --screen --to png\\' + wav + '.png' + ' tzx\\' + wav + '.tzx'
         os.system(r'tzxcat' + catargstxt)
         os.system(r'tzxcat' + catargsbas)
+        os.system(r'tzxcat' + catargspng)
 
 
 
