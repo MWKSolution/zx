@@ -7,7 +7,8 @@ if __name__ == '__main__':
     for wav in wavlist:
         print(wav)
 
-        wavargs = ' -Sright -v -p -o tzx\\' + wav + '.tzx wav\\' + wav
+        # wavargs = ' -Sright -v -p -o tzx\\' + wav + '.tzx wav\\' + wav
+        wavargs = ' -Sright -v -tlow -Thigh -lshort -p -o tzx\\' + wav + '.tzx wav\\' + wav
         os.system(r'tzxwav' + wavargs)
 
         catargstxt = ' --text tzx\\' + wav + '.tzx > txt\\' + wav + '.txt'
